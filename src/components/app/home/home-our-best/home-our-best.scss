@@ -1,0 +1,15 @@
+.home-best{
+    background-image: url("../../../../image/bottom-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    &__wrap{
+        display: flex;
+        margin-top: 35px;
+    }
+}

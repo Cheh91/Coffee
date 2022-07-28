@@ -1,0 +1,14 @@
+.logo-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    img{
+        margin: 0 25px;
+    }
+    &__line{
+        width: 60px;
+        height: 1px;
+        background-color: #000;
+    }
+}

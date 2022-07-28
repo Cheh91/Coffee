@@ -1,0 +1,13 @@
+.footer{
+    &__menu{
+        display: flex;
+        justify-content: center;
+        .header__item-link{
+            color: #000;
+        }
+    }
+    &__logo{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
