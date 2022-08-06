@@ -1,16 +1,18 @@
-import "./our-coffee-about.scss";
-import about from "../../../components/image/about-our-beans.jpg";
-import LogoBlock from "../../../components/logo-block/logo-block";
+import "./about.scss";
+// import about from "../image/about-our-beans.jpg";
 
-const OurCoffeeAbout = () => {
+import LogoBlock from "../logo-block/logo-block";
+
+const About = (props) => {
     return (
-        <div className="coffee-about">
-            <div className="coffee-about__wrap">
-                <img className="coffee-about__image" src={about} alt="" />
-                <div className="coffee-about__block">
-                    <h3>About our beans</h3>
+        <div className="about">
+            <div className="about__wrap">
+                <img className="about__image" src={props.image} alt="" />
+                <div className="about__block">
+                    {/* <h3>About our beans</h3> */}
+                    <h3>About our {props.title}</h3>
                     <LogoBlock />
-                    <div className="coffee-about__block-item">
+                    <div className="about__block-item">
                         <p>Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.</p>
                         <p>Afraid at highly months do things on at. Situation recommend objection do intention
                         so questions.</p>
@@ -20,9 +22,10 @@ const OurCoffeeAbout = () => {
                     </div>
                 </div>
             </div>
-            <div className="coffee-about__line"></div>
+            <div className="about__line"></div>
         </div>
+
     )
 }
 
-export default OurCoffeeAbout;
+export default About;

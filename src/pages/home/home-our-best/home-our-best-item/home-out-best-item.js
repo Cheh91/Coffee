@@ -1,13 +1,13 @@
 import "./home-our-best-item.scss";
-import bestImage from "./../../../../components/image/home-best-1.png";
+// import bestImage from "./../../../../components/image/home-best-1.png";
 
-const HomeOurBestItem = () => {
+const HomeOurBestItem = (props) => {
     return (
-        <div className="home-best-item">
-            <img src={bestImage} alt=""/>
-            <span className="home-best-item__text">Solimo Coffee Beans 2 kg</span>
-            <span className="home-best-item__price">10.73$</span>
-        </div>
+        <a href="/" className="home-best-item">
+            <img src={props.image} alt=""/>
+            <span className="home-best-item__text">{props.name}</span>
+            <span className="home-best-item__price">{props.price}</span>
+        </a>
     )
 }
 
